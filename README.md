@@ -22,7 +22,7 @@ Each list CSV has these columns:
 - `type`: official, unofficial-brand, affiliate-creator, tipster, streamer, staff, promo-bot, whale-alert, betting-media or other
 - `brand`: the brand it's tied to, when there is one
 - `added`: date it was added (YYYY-MM-DD), used to find new accounts since your last run
-- `user_id`: X numeric user id, as a string. Empty until it is filled in. Consumers should match on `user_id` when present and fall back to `handle`.
+- `user_id`: X numeric user id, as a string. The gambling list has one on every row. Consumers should match on `user_id` when present and fall back to `handle`.
 
 The removed list has a header and these columns. It has no rows yet.
 
