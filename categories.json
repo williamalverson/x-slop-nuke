@@ -1,12 +1,15 @@
 {
-  "version": "2026-11-21",
+  "version": "2026-11-22",
+  "removed_file": "lists/removed.csv",
   "categories": [
     {
       "id": "gambling",
       "name": "Gambling, casinos, sportsbooks, sweepstakes and prediction markets",
       "file": "lists/gambling.csv",
       "count": 1529,
-      "updated": "2026-11-21"
+      "updated": "2026-11-21",
+      "sensitive": false,
+      "default_on": true
     }
   ]
 }
