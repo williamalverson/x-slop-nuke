@@ -10,6 +10,33 @@
       "updated": "2026-11-22",
       "sensitive": false,
       "default_on": true
+    },
+    {
+      "id": "streamers",
+      "name": "Streamers, clip channels, fan accounts and aggregators",
+      "file": "lists/streamers.csv",
+      "count": 450,
+      "updated": "2026-11-22",
+      "sensitive": false,
+      "default_on": false
+    },
+    {
+      "id": "crypto",
+      "name": "Crypto traders, memecoin shills, meme stocks and airdrop accounts, including official platform accounts by design",
+      "file": "lists/crypto.csv",
+      "count": 908,
+      "updated": "2026-11-22",
+      "sensitive": false,
+      "default_on": false
+    },
+    {
+      "id": "onlyfans",
+      "name": "OnlyFans and similar adult platforms, including official platform accounts by design",
+      "file": "lists/onlyfans.csv",
+      "count": 717,
+      "updated": "2026-11-22",
+      "sensitive": true,
+      "default_on": false
     }
   ]
 }

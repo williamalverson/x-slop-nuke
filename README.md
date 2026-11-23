@@ -4,11 +4,14 @@ Shared block lists for cleaning slop out of your X For You feed. Each list is a 
 
 ## Lists
 
-| Category | File | What's in it |
-|---|---|---|
-| gambling | `lists/gambling.csv` | Sportsbooks, online and crypto casinos, sweepstakes casinos, DFS apps, prediction markets, plus their regional and fake accounts, affiliate-code creators, tipsters, gambling streamers and promo bots |
+| Category | File | Count | What's in it |
+|---|---|---|---|
+| gambling | `lists/gambling.csv` | 1529 | Sportsbooks, online and crypto casinos, sweepstakes casinos, DFS apps, prediction markets, plus their regional and fake accounts, affiliate-code creators, tipsters, gambling streamers and promo bots |
+| streamers | `lists/streamers.csv` | 450 | Streamers and their clip channels, fan accounts and aggregators on Twitch, Kick and YouTube. Off by default. |
+| crypto | `lists/crypto.csv` | 908 | Degen traders, callers, memecoin shills, meme-stock pumpers, airdrop farmers, paid signal groups and giveaway bait. Includes official platform accounts by design. Off by default. |
+| onlyfans | `lists/onlyfans.csv` | 717 | Creators, promo groups, agencies, repost accounts and spam bots on OnlyFans and similar platforms. Includes official platform accounts by design. Sensitive and opt-in. Off by default. |
 
-`categories.json` lists every category and file, so new categories can be added without changing the skill. Its `version` is a date. Each category has `sensitive` and `default_on`. Gambling is not sensitive and is on by default. Sensitive categories such as porn and OnlyFans must set `default_on` to false. The skill leaves them off unless you opt in.
+`categories.json` lists every category and file, so new categories can be added without changing the skill. Its `version` is a date. Each category has `sensitive` and `default_on`. Gambling is not sensitive and is on by default. Streamers, crypto and OnlyFans are off by default. OnlyFans is sensitive and opt-in. The skill leaves sensitive categories off unless you opt in.
 
 `removed_file` in `categories.json` points at `lists/removed.csv`, the accounts taken off a list. On your next run, entries you blocked through this project are unblocked only after you say yes.
 
